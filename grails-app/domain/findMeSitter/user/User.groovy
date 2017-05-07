@@ -44,7 +44,6 @@ class User implements Serializable {
 		password = springSecurityService?.passwordEncoder ? springSecurityService.encodePassword(password) : password
 	}
 
-	static searchable = true
 	static transients = ['springSecurityService']
 	static constraints = {
 		password blank: false, password: true

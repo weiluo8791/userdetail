@@ -63,7 +63,6 @@ class UserRole implements Serializable {
 		r == null ? 0 : UserRole.where { role == r }.deleteAll()
 	}
 
-	static searchable = true
 	static constraints = {
 		role validator: { Role r, UserRole ur ->
 			if (ur.user?.id) {

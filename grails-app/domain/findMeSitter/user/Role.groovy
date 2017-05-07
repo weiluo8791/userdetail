@@ -15,7 +15,6 @@ class Role implements Serializable {
 
 	String authority
 
-	static searchable = true
 	static constraints = {
 		authority blank: false, unique: true
 	}
